@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @activity.note %>
+</p>
+
+<p>
+  <strong>Start at:</strong>
+  <%= @activity.start_at %>
+</p>
+
+<p>
+  <strong>Time elapsed:</strong>
+  <%= @activity.time_elapsed %>
+</p>
+
+<p>
+  <strong>Occurrence:</strong>
+  <%= @activity.occurrence_id %>
+</p>
+
+<%= link_to 'Edit', edit_activity_path(@activity) %> |
+<%= link_to 'Back', activities_path %>

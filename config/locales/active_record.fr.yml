@@ -1,0 +1,40 @@
+fr:
+  activerecord:
+    models:
+      user: utilisateur
+      subject_set: classification
+      subject: dossier
+      occurrence: occurrence
+      activity: activité
+    attributes:
+      subject_set: 
+        name: nom
+        title: nom long
+        note: description
+        subjects: dossiers
+      subject: 
+        name: nom
+        title: nom long
+        note: description
+        subject_set: classification
+        occurrences: occurences
+      occurrence: 
+        name: nom
+        title: nom long
+        note: description
+        raised_at: signalé le
+        active: actif
+        subject: dossier
+      activity: 
+        note: description
+        occurence: occurence
+        elapsed_time: durée
+        occurrence: occurrence
+      user:
+        username: "Nom d'utilisateur"
+        current_password: "Mot de passe actuel"
+        password: "Mot de passe"
+        password_confirmation: "Confirmer"
+        remember_me: "Se souvenir de moi ?"
+        email: "Courriel"
+        role: "Rôle"

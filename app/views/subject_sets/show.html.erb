@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @subject_set.name %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @subject_set.note %>
+</p>
+
+<%= link_to 'Edit', edit_subject_set_path(@subject_set) %> |
+<%= link_to 'Back', subject_sets_path %>

@@ -1,0 +1,33 @@
+<h1>Listing occurrences</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Note</th>
+      <th>Raised at</th>
+      <th>Active</th>
+      <th>Subject</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @occurrences.each do |occurrence| %>
+      <tr>
+        <td><%= occurrence.title %></td>
+        <td><%= occurrence.note %></td>
+        <td><%= occurrence.raised_at %></td>
+        <td><%= occurrence.active %></td>
+        <td><%= occurrence.subject_id %></td>
+        <td><%= link_to 'Show', occurrence %></td>
+        <td><%= link_to 'Edit', edit_occurrence_path(occurrence) %></td>
+        <td><%= link_to 'Destroy', occurrence, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Occurrence', new_occurrence_path %>
